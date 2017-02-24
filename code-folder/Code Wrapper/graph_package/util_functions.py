@@ -95,20 +95,61 @@ def get_paper_nodes(  ):
             if( citer_id == paper_id ):
                 cited_node_array.append( cited_paper_id ) 
                 
-        # for getting author array
         
+
+
+
+# for getting author array
+
+        temp_id=paper_id
+        while temp_id == paper_id:
+            line6 = paper_author_file_handle.readline()
+            line6 = line6[:-1]
+            if(line6 == ''):
+                break
+            line_contents = line6.split('\t')
+            try:
+                temp_id = int( line_contents[0] )
+            except ValueError:
+                continue
+            open_bracket_pos = line_contents[1].index('[')
+            close_bracket_pos = line_contents[1].index(']')
+            author = line_contents[1][open_bracket_pos+1:close_bracket_pos]
+            try:
+                author = int(author)
+            except ValueError:
+                continue
+            if( temp_id == paper_id):
+                author_array.append( author )                 
         
         
         
         # for getting keywords
+
+        line7 = paper_abstract_file_handle.readline()
+        line_contents = line7.split('\t')
+     
+        #keywords_array = [word for word in line_contents if word not in stopwords.words('english')]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
-        
-        
-        
-        # object creation        
+        # object creation  
         paper_node_object = paper_node(venue, field, title, year, author_array, cited_node_array, keywords_array) 
         paper_node_dict[paper_id] = paper_node_object.object_to_json()
         cited_node_array = [ cited_paper_id ]
+        author_array = [ author ]
     return paper_node_dict
     
     citation_file_handle.close()
