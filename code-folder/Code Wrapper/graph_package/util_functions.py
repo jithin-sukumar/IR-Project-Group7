@@ -101,7 +101,7 @@ def get_paper_nodes(  ):
         
         
         # object creation        
-        paper_node_object = paper_node(venue, field, title, year, author_array, cited_node_array, keywords_array) 
+        paper_node_object = paper_node(paper_id, venue, field, title, year, author_array, cited_node_array, keywords_array) 
         paper_node_array.append( paper_node_object.object_to_json() )
         cited_node_array = [ cited_paper_id ]
     return paper_node_array
