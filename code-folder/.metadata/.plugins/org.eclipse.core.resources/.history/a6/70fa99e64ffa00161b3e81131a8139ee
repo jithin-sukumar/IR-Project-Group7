@@ -1,0 +1,16 @@
+from util_classes import *
+from global_variable_def import *
+
+paper_json_handle = open(paper_nodes_json, 'w')
+citation_network_file = open(citation_network, 'r')
+
+citing_paper_array = []
+authors_array = []
+paper_nodes = {}
+
+curr_paper_id = 15
+for line in citation_network_file:
+    line_contents = line.split('\t')
+    
+    if(  )
+    

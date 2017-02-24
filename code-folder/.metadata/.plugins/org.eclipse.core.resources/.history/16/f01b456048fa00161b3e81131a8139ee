@@ -1,0 +1,3 @@
+output_file_dir = '../../../output-files'
+input_data_file = '../../../data'
+

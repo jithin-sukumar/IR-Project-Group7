@@ -1,0 +1,4 @@
+from util_classes import *
+paper = paper()  
+obj = paper('delhi', ['a','b'], [1,2,3], [])
+obj.object_printer()     

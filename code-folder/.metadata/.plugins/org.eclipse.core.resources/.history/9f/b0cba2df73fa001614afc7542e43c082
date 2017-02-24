@@ -1,0 +1,7 @@
+from util_classes import *
+from global_variable_def import *
+from util_functions import *
+
+paper_json_handle = open(paper_nodes_json, 'w')
+paper_node_array = []
+get_paper_nodes(  )  

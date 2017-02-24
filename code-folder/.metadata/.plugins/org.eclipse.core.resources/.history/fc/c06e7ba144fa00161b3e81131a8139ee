@@ -1,0 +1,4 @@
+import graph_package.util_classes
+    
+obj = paper('delhi', ['a','b'], [1,2,3], [])
+obj.object_printer()     

@@ -1,0 +1,24 @@
+import json
+class paper_node:
+    authors = []
+    citing_papers = []
+    keywords = []
+    
+    def __init__(self, venue, field, title, author_array, citing_paper_array, keywords_array):
+        self.venue = venue
+        self.field = field
+        self.title = title
+        for i in range(0, len(author_array)):
+            self.authors.append( author_array[i] )
+        for i in range(0, len(citing_paper_array)):
+            self.citing_papers.append( citing_paper_array[i] )
+        for i in range(0, len(keywords_array)):
+            self.keywords.append( keywords_array[i] )
+    
+    def object_to_json(self):
+        
+obj = paper_node( 'del', 'algo', 'sex', ['p','l'], [1,2], [] )
+print json.dumps( obj )
+   
+        
+    

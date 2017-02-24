@@ -1,0 +1,80 @@
+from global_variable_def import *
+from util_classes import *
+
+def get_paper_venue_pair( paper_nodes ):
+    citation_file_handle = open(citation_network, 'r')
+    paper_abstract_file_handle = open(paper_abstract, 'r')
+    paper_author_file_hanlde = open(paper_authors, 'r')
+    paper_field_file_handle = open(paper_fields, 'r')
+    paper_title_file_handle = open(paper_title, 'r')
+    paper_venue_file_handle = open(paper_venue, 'r')
+    paper_year_file_handle = open(paper_year, 'r')
+    
+    cited_node_array = []
+    author_array = []
+    keywords_array = []
+    
+    citer_id = 15
+        
+    for line1 in paper_venue_file_handle:
+        
+        # for getting venue
+        
+        line_contents = line1.split('\t')
+            
+        try:
+            paper_id = int( line_contents[0] )
+        except ValueError:
+            continue
+        venue = line_contents[1]
+        
+        #for getting field
+        
+        line3 = next( paper_field_file_handle )
+        line_contents = line1.split('\t')
+            
+        try:
+            paper_id = int( line_contents[0] )
+        except ValueError:
+            continue
+        field = line_contents[1]
+        
+        # for getting title
+        
+        line4 = next( paper_title_file_handle )
+        line_contents = line4.split('\t')
+        title = line_contents[1]
+        
+        # for getting year
+        
+        year = 1997
+        
+        
+        # for getting cited paper array
+        
+        while citer_id == paper_id:
+            line3 = next( citation_file_handle )    
+            line_contents = line3.split('\t')
+            
+            try:
+                citer_id =  int( line_contents[0] )
+            except ValueError:
+                continue
+            try: 
+                cited_paper_id =  int( line_contents[1] )
+            except ValueError:
+                continue
+            
+            if( citer_id == paper_id ):
+                cited_node_array.append( cited_paper_id ) 
+                
+        # for getting author array
+        
+        # for getting keywords
+        
+         
+         
+        
+        
+        
+    

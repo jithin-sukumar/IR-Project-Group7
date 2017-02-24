@@ -1,0 +1,5 @@
+from util_classes import *
+obj = paper('del', ['a', 'b'], [1,2,3], [])
+obj.object_printer()
+
+paper_json_handle = 

@@ -1,0 +1,39 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/jithin/Desktop/IR_Group7/code-folder/.metadata/.plugins/org.eclipse.core.resources/.projects/Code Wrapper/com.python.pydev.analysis/v2_indexcache
+graph_package.global_variable_def|1487930164000000000|/home/jithin/Desktop/IR_Group7/code-folder/Code Wrapper/graph_package/global_variable_def.py
+graph_package.util_classes|1487938286000000000|/home/jithin/Desktop/IR_Group7/code-folder/Code Wrapper/graph_package/util_classes.py
+graph_package.__init__|1487938470000000000|/home/jithin/Desktop/IR_Group7/code-folder/Code Wrapper/graph_package/__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+5
+5=paper_node.__init__
+1=graph_package.global_variable_def
+3=graph_package.util_classes
+4=paper_node
+2=graph_package.__init__
+-- END DICTIONARY
+-- START TREE 1
+9
+aut|1|author_nodes_json!11@
+cit|1|citation_network!11@
+fie|1|fields_nodes_json!11@
+get|0|
+inp|1|input_data_file!11@
+obj|0|
+out|1|output_file_dir!11@
+pap|12|paper_year!11@paper_json_handle!19@paper_node_array!19@paper_title!11@paper_nodes_object!19@paper_node_json_object!19@paper_node!25@paper_fields!11@paper_venue!11@paper_nodes_json!11@paper_authors!11@paper_abstract!11@
+ven|1|venue_nodes_json!11@
+-- END TREE
+-- START TREE 2
+9
+__i|1|__init__!4&26@
+aut|2|authors!4&27@authors!5&27@
+cit|2|citing_papers!4&27@citing_papers!5&27@
+fie|1|field!5&27@
+key|2|keywords!4&27@keywords!5&27@
+obj|1|object_to_json!4&26@
+tit|1|title!5&27@
+ven|1|venue!5&27@
+yea|1|year!5&27@
+-- END TREE

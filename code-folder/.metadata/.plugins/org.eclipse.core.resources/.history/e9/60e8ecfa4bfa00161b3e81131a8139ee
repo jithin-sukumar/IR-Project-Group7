@@ -1,0 +1,14 @@
+output_file_dir = '../../../output-files'
+input_data_file = '../../../data'
+
+paper_nodes_json = output_file_dir+'/Papers.json'
+author_nodes_json = output_file_dir+'/Authors.json'
+venue_nodes_json = output_file_dir+'/Venues.json'
+
+citation_network = input_data_file+'/citation_network'
+paper_abstract = input_data_file+'/paper_abstract.txt'
+paper_authors = input_data_file+'/paper_authors.txt'
+paper_fields = input_data_file+'/paper_fields.txt'
+paper_title = input_data_file+'/paper_title.txt'
+paper_venue = input_data_file+'/paper_venue.txt'
+paper_year = input_data_file+'/paper_year.txt'

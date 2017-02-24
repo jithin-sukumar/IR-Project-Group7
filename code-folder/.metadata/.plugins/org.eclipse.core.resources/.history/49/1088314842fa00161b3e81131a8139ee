@@ -1,0 +1,5 @@
+class paper:
+    authors = []
+    citing_papers = []
+    keywords = []
+    

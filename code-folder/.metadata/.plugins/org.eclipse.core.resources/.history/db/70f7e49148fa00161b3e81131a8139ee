@@ -1,0 +1,7 @@
+output_file_dir = '../../../output-files'
+input_data_file = '../../../data'
+
+paper_nodes_json = output_file_dir+'/Papers.json'
+author_nodes_json = output_file_dir+'/Authors.json'
+venue_nodes_json = output_file_dir+'/Venues.json'
+

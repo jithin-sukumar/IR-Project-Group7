@@ -1,0 +1,43 @@
+from global_variable_def import *
+
+def get_paper_venue_pair( paper_nodes ):
+    paper_venue_file_handle = open(paper_venue, 'r')
+    cnt = 0
+    for line in file_handle:
+        line_contents = line.split('\t')
+        try:
+            paper_id = int( line_contents[0] )
+        except ValueError:
+            continue
+        temp_object = {}
+        temp_object['Venue'] 
+        paper_nodes[paper_id] = {}
+        paper_nodes[paper_id]
+
+    prev_citer_id = 15
+    citer_id = 15
+    cited_node_array = []
+    file_handle = open(citation_network, 'r')
+    while citer_id == prev_citer_id:
+        line = next( file_handle )    
+        line_contents = line.split('\t')
+        prev_citer_paper_id = citer_id
+        
+        try:
+            citer_id =  int( line_contents[0] )
+        except ValueError:
+            continue
+        try: 
+            cited_paper_id =  int( line_contents[1] )
+        except ValueError:
+            continue
+        
+        if( citer_id == prev_citer_paper_id ):
+            cited_node_array.append( cited_paper_id ) 
+        else: 
+            print prev_citer_id
+            print cited_node_array
+            cited_node_array = [ cited_paper_id ]
+            prev_citer_id = citer_id
+    
+    

@@ -1,0 +1,22 @@
+from util_classes import *
+from global_variable_def import *
+from util_fucntions import *
+
+paper_json_handle = open(paper_nodes_json, 'w')
+
+citation_network_file = open(citation_network, 'r')
+paper_authors_file = open(paper_authors, 'r')
+
+cited_paper_array = []
+authors_array = []
+paper_nodes = {}
+
+prev_citer_paper_id = 15
+citer_paper_id = 15
+
+while citer_paper_id == prev_citer_paper_id:
+    line = next( citation_network_file )
+    
+
+
+    

@@ -1,0 +1,7 @@
+class paper:
+    authors = []
+    citing_papers = []
+    keywords = []
+    
+    def __init__(self, venue, author_array, citing_paper_array, keywords_array):
+        

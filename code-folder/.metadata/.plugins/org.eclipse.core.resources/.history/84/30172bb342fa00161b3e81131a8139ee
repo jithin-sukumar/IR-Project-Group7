@@ -1,0 +1,10 @@
+class paper:
+    authors = []
+    citing_papers = []
+    keywords = []
+    
+    def __init__(self, venue, author_array, citing_paper_array, keywords_array):
+        self.venue = venue
+        for i in range(0, len(author_array)):
+            self.authors.append( author_array[i] )
+            
