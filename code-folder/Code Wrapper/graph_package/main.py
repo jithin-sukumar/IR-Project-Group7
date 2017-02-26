@@ -1,5 +1,5 @@
 import json
-from global_variable_def import*    
+from global_variable_def import *    
 
 def avquery(a,v):
     with open(author_nodes_json) as df:
